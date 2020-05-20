@@ -27,10 +27,59 @@
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-center">
+          
+          <div class="text-right">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#home-section" class="nav-link">Home</a></li>
+                <li><a href="#initialisation-section" class="nav-link">Initialisation</a></li>
+                <li><a href="#lofi-section" class="nav-link">Lo-Fi Prototype</a></li>
+                
+              </ul>
+            </nav>
+          </div>
+
+          <div class=" text-center mx-5">
+            <h1 class="m-0 site-logo"><a href="index.html"><img src="images/home.jpg" width="40" alt="Logo"></a></h1>
+          </div>
+
+          <div class="text-left">
+
+            <nav class="site-navigation position-relative" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#hifi-section" class="nav-link">Hi-Fi Prototype</a></li>
+                <li><a href="#trackit-section" class="nav-link">TrackIt v.1.0</a></li>
+                <li><a href="#gallery-section" class="nav-link">Gallery</a></li>
+              </ul>
+            </nav>
+
+
+            <div class="d-inline-block d-lg-none" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
 
   <div id="loading"></div>
     <div class="wrapper">
-      <a href="index.html" class="logo"><img src="images/home.jpg" width="40" alt="Logo"></a>
       <div id="main" class="main">
         <div class="project-page">
           <div class="container custompadding">
@@ -41,7 +90,9 @@
 					  <div class="container">
 						<div class="row ">
 						  <div class="col-12 mb-5 position-relative">
-							<h2 class="section-title text-center mb-5"><img class="img-responsive" height="50" border="0" align="center" src="images/trackit/cern.jpg" alt="Project Image"> Track It</h1></h2>
+						  	<div class="site-section block__62272" id="home-section">
+								<h1 class="section-title text-center mb-5"><img class="img-responsive" height="50" border="0" align="center" src="images/trackit/cern.jpg" alt="Project Image"> Track It</h1>
+						    </div>
 						  </div>
           
 						  <div class="col-md-6 mb-4">
@@ -89,15 +140,18 @@
 					</div>
 
 
-					<div class="site-section" id="about-section">
+					<div class="site-section" id="initialisation-section">
 						<div class="container">
 						<div class="row ">
 							<div class="col-12 mb-4 position-relative">
 							<h2 class="section-title">Initialisation</h2>
 							</div>
-							<div class="col-md-8 mb-4">
+							<div class="item web col-md-8 mb-4">
 								<div class="bg-light">
-								<img src="images/trackit/img5.png" alt="Image" class="img-fluid">
+								<a href="images/trackit/img5.png" class="item-wrap fancybox">
+								  <span class="icon-search2"></span>
+								  <img class="img-fluid" src="images/trackit/img5.png">
+								</a>
 								</div>
 							</div>
 							<div class="col-lg-4 order-2 order-lg-1">
@@ -109,7 +163,7 @@
 						</div>
 					</div>
 
-					<div class="site-section" id="about-section">
+					<div class="site-section" id="lofi-section">
 						<div class="container">
 						<div class="row ">
 							<div class="col-12 mb-4 position-relative">
@@ -121,24 +175,30 @@
 
 							<p>Having the opportunity to show early prototypes to the user, is a big boost for discussions, ensures that there is a shared vision of what will come next and makes new adjustments easy.</p>
 							</div>
-							<div class="col-md-8 mb-4 order-2">
+							<div class="item web col-md-8 mb-4 order-2">
 								<div class="bg-light">
-								<img src="images/trackit/img1.png" alt="Image" class="img-fluid">
+								<a href="images/trackit/img1.png" class="item-wrap fancybox">
+								  <span class="icon-search2"></span>
+								  <img class="img-fluid" src="images/trackit/img1.png">
+								</a>
 								</div>
 							</div>
 						</div>
 						</div>
 					</div>
 
-					<div class="site-section" id="about-section">
+					<div class="site-section" id="hifi-section">
 						<div class="container">
 						<div class="row ">
 							<div class="col-12 mb-4 position-relative">
 							<h2 class="section-title">Hi-Fi Prototype</h2>
 							</div>
-							<div class="col-md-8 mb-4">
+							<div class="item web col-md-8 mb-4">
 								<div class="bg-light">
-								<img src="images/trackit/img2.png" alt="Image" class="img-fluid">
+								<a href="images/trackit/img2.png" class="item-wrap fancybox">
+								  <span class="icon-search2"></span>
+								  <img class="img-fluid" src="images/trackit/img2.png">
+								</a>
 								</div>
 							</div>
 							<div class="col-lg-4 order-2 order-lg-1">
@@ -150,7 +210,7 @@
 						</div>
 					</div>
 
-					<div class="site-section" id="about-section">
+					<div class="site-section" id="trackit-section">
 						<div class="container">
 						<div class="row ">
 							<div class="col-12 mb-4 position-relative">
@@ -161,19 +221,26 @@
 							<p>The backlog was filled with tasks, an architecture was agreed on and menpower was allocated to create a functioning version of TrackIt.</p>
 							<p>With version 1.0 the journey of a software never ends and it is when fiction and reality clash together.</p>
 							</div>
-							<div class="col-md-8 mb-4 order-2">
+							<div class="item web col-md-8 mb-4 order-2">
 								<div class="bg-light">
-								<img src="images/trackit/img3.jpg" alt="Image" class="img-fluid">
+								<a href="images/trackit/img3.jpg" class="item-wrap fancybox">
+								  <span class="icon-search2"></span>
+								  <img class="img-fluid" src="images/trackit/img3.jpg">
+								</a>
 								</div>
 							</div>
 							<div class="col-lg-4 order-4">
 							<p>But through solid research and communication in earlier stages we managed to meet the expectations, and in some points even more.</p>
 							<p>Further versions of TrackIt are created until today, and I am proud that I could be a part of it! </p>
 							</div>
-							<div class="col-md-8 mb-4 order-3">
+							<div class="item web col-md-8 mb-4 order-3">
 								<div class="bg-light">
-								<img src="images/trackit/img4.jpg" alt="Image" class="img-fluid">
+								<a href="images/trackit/img4.jpg" class="item-wrap fancybox">
+								  <span class="icon-search2"></span>
+								  <img class="img-fluid" src="images/trackit/img4.jpg">
+								</a>
 							</div>
+							<p>
 							<p>View <a href="https://drive.google.com/file/d/1bHd734uz39g6JKwm1MtQk3uZeOVamDCx/view"> <u>conference poster</u> </a>
 							or <a href="https://drive.google.com/file/d/1INUeQu960HcZ6J2pr-IhGAr3KkPrx8CA/view"> <u>publication</u> </a>
 							</div>
@@ -198,13 +265,13 @@
 				</section>
 				   
 
-			<section class="site-section block__62272" id="galery">
+			<section class="site-section block__62272" id="gallery-section">
       
 
 			  <div class="container">
 				<div class="row mb-5">
 				  <div class="col-12 position-relative">
-					<h2 class="section-title text-center mb-5">Galerie</h2>
+					<h2 class="section-title text-center mb-5">Gallery</h2>
 				  </div>
 				</div>		
 
